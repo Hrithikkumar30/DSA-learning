@@ -86,6 +86,8 @@ class LinkedList:
     # Deleting the head
     
     def delete_head(self):
+        if self.head==None:
+            return 'empty linked list'
         self.head=self.head.next
             
     
