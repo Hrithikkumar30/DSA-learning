@@ -90,6 +90,8 @@ class LinkedList:
             return 'empty linked list'
         self.head=self.head.next
             
+            
+    
     
 LL= LinkedList()
 LL.insert_head(1)
