@@ -130,7 +130,17 @@ class LinkedList:
         else:
             curr.next=curr.next.next
         
+        # searching item in Linked List and getting its index
         
+        def search(self,item):
+            curr = self.head
+            pos=0
+            while curr!=None:
+                if curr.data==item:
+                    return pos
+                curr=curr.next
+                pos=pos+1
+            return 'not found'
         
             
             
