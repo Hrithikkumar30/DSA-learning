@@ -73,6 +73,7 @@ class LinkedList:
         if curr != None:
             new_node.next=curr.next
             curr.next=new_node
+            self.n=self.n+1
         else:
             print( 'item not found') # 2. if condition does not breaks means loop pura chala-> item does not found in the linked List ->curr->none
 
