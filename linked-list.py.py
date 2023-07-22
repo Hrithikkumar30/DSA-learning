@@ -76,6 +76,12 @@ class LinkedList:
             self.n=self.n+1
         else:
             print( 'item not found') # 2. if condition does not breaks means loop pura chala-> item does not found in the linked List ->curr->none
+            
+    # clear the Linked List
+    
+    def clear(self):
+        self.head=None
+        self.n=self.n+1
 
             
 LL= LinkedList()
@@ -86,8 +92,8 @@ LL.insert_head(4)
 LL.insert_at_end(5)
 LL.insert_after(5,40)
 
-print(LL.traverse())  
-
+# print(LL.traverse())  
+print(LL.clear())
         
         
         
