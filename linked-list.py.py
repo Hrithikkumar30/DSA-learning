@@ -81,9 +81,14 @@ class LinkedList:
     
     def clear(self):
         self.head=None
-        self.n=self.n+1
+        self.n=0
 
+    # Deleting the head
+    
+    def delete_head(self):
+        self.head=self.head.next
             
+    
 LL= LinkedList()
 LL.insert_head(1)
 LL.insert_head(2)
@@ -92,8 +97,10 @@ LL.insert_head(4)
 LL.insert_at_end(5)
 LL.insert_after(5,40)
 
-# print(LL.traverse())  
-print(LL.clear())
+print(LL.delete_head())
+print(LL.traverse())  
+
+# print(LL.clear())
         
         
         
