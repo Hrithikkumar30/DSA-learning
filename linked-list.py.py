@@ -89,10 +89,24 @@ class LinkedList:
         if self.head==None:
             return 'empty linked list'
         self.head=self.head.next
+        self.n = self.n-1
             
-            
-    
-    
+           #Pop operation on liked list Deleting at last 
+    def pop(self):
+        if self.head==None:
+            return 'empty linked list'
+        
+        curr=self.head
+        if curr.next == self.head:
+            return self.delete_head()
+            pass
+        while curr.next.next != None:
+            curr = curr.next
+        
+        curr.next=None
+        self.n = self.n-1
+        self.n = self.n-1
+
 LL= LinkedList()
 LL.insert_head(1)
 LL.insert_head(2)
@@ -100,9 +114,10 @@ LL.insert_head(3)
 LL.insert_head(4)
 LL.insert_at_end(5)
 LL.insert_after(5,40)
-
-print(LL.delete_head())
+LL.pop()
+# print(LL.delete_head())
 print(LL.traverse())  
+LL.pop()
 
 # print(LL.clear())
         
