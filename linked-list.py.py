@@ -106,6 +106,34 @@ class LinkedList:
         curr.next=None
         self.n = self.n-1
         self.n = self.n-1
+        
+        
+        # remove by item in Linked List
+    def remove(self,value):
+        if self.head==None:
+            return 'empty linked list'
+        curr = self.head
+        
+        if self.head.data==value:
+            return self.delete_head()
+        while curr.next != None:
+            if curr.next.data == value:
+                break
+            curr= curr.next
+            
+        # 2 cases 
+        # b. if item does not found
+        if curr.next==None:
+            return 'not found'
+
+        # a. if item found
+        else:
+            curr.next=curr.next.next
+        
+        
+        
+            
+            
 
 LL= LinkedList()
 LL.insert_head(1)
