@@ -132,16 +132,27 @@ class LinkedList:
         
         # searching item in Linked List and getting its index
         
-        def search(self,item):
-            curr = self.head
-            pos=0
-            while curr!=None:
-                if curr.data==item:
-                    return pos
-                curr=curr.next
-                pos=pos+1
-            return 'not found'
+    def search(self,item):
+        curr = self.head
+        pos=0
+        while curr!=None:
+            if curr.data==item:
+                return pos
+            curr=curr.next
+            pos=pos+1
+        return 'not found'
         
+        
+        # search by index
+        
+    def __getitem__(self,index):
+        curr=self.head
+        pos=0
+        while curr!=None:
+            if pos==index:
+                return curr.data
+            curr=curr.next
+            pos=pos+1
             
             
 
@@ -152,10 +163,11 @@ LL.insert_head(3)
 LL.insert_head(4)
 LL.insert_at_end(5)
 LL.insert_after(5,40)
-LL.pop()
+print(LL[4])
+# LL.pop() 
 # print(LL.delete_head())
-print(LL.traverse())  
-LL.pop()
+# print(LL.traverse())  
+# LL.pop()
 
 # print(LL.clear())
         
