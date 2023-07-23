@@ -48,3 +48,14 @@ Write a program to reverse a linked list without creating new linked list(inplac
 #         self.head=prev_node
 # LL.reverse()
 # print(LL.traverse())
+
+#    def change_sent(self):
+#         curr = self.head
+        
+#         while curr != None:
+#             if curr.data=='*' or curr.data=='/':
+#                 curr.data=" "
+#                 if curr.next.data =='*' or curr.next.data=='/':
+#                     curr.next.next.data = curr.next.next.data.upper()   
+#                     curr.next = curr.next.next
+#             curr = curr.next     
