@@ -31,4 +31,20 @@ Write a program to add item in the linked List present at the odd index
     #         pos+=1
     #         curr=curr.next
     #     print(result)
-                
+    
+    
+"""
+Write a program to reverse a linked list without creating new linked list(inplace reversal )
+"""              
+#     def reverse(self):
+#         prev_node = None
+#         curr = self.head
+        
+#         while curr!=None:
+#             next_node = curr.next
+#             curr.next=prev_node
+#             prev_node=curr
+#             curr=next_node
+#         self.head=prev_node
+# LL.reverse()
+# print(LL.traverse())

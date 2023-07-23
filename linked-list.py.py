@@ -155,7 +155,6 @@ class LinkedList:
             pos=pos+1
             
 
-
 LL= LinkedList()
 LL.insert_head(1)
 LL.insert_head(2)
