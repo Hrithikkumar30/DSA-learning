@@ -154,7 +154,7 @@ class LinkedList:
             curr=curr.next
             pos=pos+1
             
-            
+
 
 LL= LinkedList()
 LL.insert_head(1)
@@ -163,19 +163,13 @@ LL.insert_head(3)
 LL.insert_head(4)
 LL.insert_at_end(5)
 LL.insert_after(5,40)
-print(LL[4])
+# print(LL[4])
 # LL.pop() 
 # print(LL.delete_head())
-# print(LL.traverse())  
+print(LL.traverse())  
 # LL.pop()
 
 # print(LL.clear())
-        
-        
-        
-        
-        
-        
 # a=Node(1)
 # b=Node(2)
 # c=Node(3)
