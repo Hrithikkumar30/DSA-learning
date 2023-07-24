@@ -59,3 +59,22 @@ Write a program to reverse a linked list without creating new linked list(inplac
 #                     curr.next.next.data = curr.next.next.data.upper()   
 #                     curr.next = curr.next.next
 #             curr = curr.next     
+
+""" Linked List Cycle"""
+
+# class Solution(object):
+#     def hasCycle(self, head):
+#         """
+#         :type head: ListNode
+#         :rtype: bool
+#         """
+#         slwpntr = head
+#         fastpntr = head
+
+#         while fastpntr and fastpntr.next:
+#             slwpntr = slwpntr.next
+#             fastpntr = fastpntr.next.next
+
+#             if slwpntr == fastpntr:
+#                 return True
+#         return False
