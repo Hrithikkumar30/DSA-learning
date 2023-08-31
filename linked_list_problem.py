@@ -86,30 +86,51 @@ Write a program to reverse a linked list without creating new linked list(inplac
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
-class Solution:
-    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+# class Solution:
+#     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
 
-        dummyHead = ListNode(0)
-        tail = dummyHead
-        carry = 0
+#         dummyHead = ListNode(0)
+#         tail = dummyHead
+#         carry = 0
 
-        while l1 is not None or l2 is not None or carry != 0:
-            digit1 = l1.val if l1 is not None else 0
-            digit2 = l2.val if l2 is not None else 0
+#         while l1 is not None or l2 is not None or carry != 0:
+#             digit1 = l1.val if l1 is not None else 0
+#             digit2 = l2.val if l2 is not None else 0
 
-            sum = digit1 + digit2 + carry
-            digit = sum % 10
-            carry = sum // 10
+#             sum = digit1 + digit2 + carry
+#             digit = sum % 10
+#             carry = sum // 10
 
-            newNode = ListNode(digit)
-            tail.next = newNode
-            tail = tail.next
+#             newNode = ListNode(digit)
+#             tail.next = newNode
+#             tail = tail.next
 
-            l1 = l1.next if l1 is not None else None
-            l2 = l2.next if l2 is not None else None
+#             l1 = l1.next if l1 is not None else None
+#             l2 = l2.next if l2 is not None else None
 
-        result = dummyHead.next
-        dummyHead.next = None
-        return result
+#         result = dummyHead.next
+#         dummyHead.next = None
+        # return result
             
-            
+"""             
+Maximum Twin Sum of a Linked List
+# """
+# class Solution:
+#     def pairSum(self, head: Optional[ListNode]) -> int:
+#         f = s = head
+#         prev = None
+
+#         while f and f.next:
+#             f = f.next.next
+#             temp = s.next
+#             s.next = prev
+#             prev = s
+#             s= temp
+
+#         res = float('-inf')
+
+#         while s and prev:
+#             res = max(res , s.val+prev.val)
+#             s = s.next
+#             prev =prev.next
+#         return res
